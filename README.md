@@ -64,6 +64,7 @@ And then execute this query:
 
 ```
 User.create(email: 'admin@example.com', password: 'password', username: 'admin123', role: 'admin')
+User.create(email: 'admin2@example.com', password: 'password2', username: 'admin1234', role: 'admin')
 ```
 
 And then use this user's credentials for signin. You can use either username opr email for signin.

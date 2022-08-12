@@ -5,3 +5,12 @@ import * as bootstrap from "bootstrap"
 import Rails from '@rails/ujs'
 
 Rails.start()
+
+document
+  .querySelector('#click-to-copy')
+  .addEventListener('click', e => {
+    let value = document.querySelector('#share')
+    value.select();
+    document.execCommand("copy");
+
+  })

@@ -8,6 +8,8 @@
     <%= link_to "Back to documents", documents_path, class: "btn btn-outline-primary" %>
 
     <%= link_to "Destroy this document", @document, method: :delete, class: "btn btn-danger", data: { confirm: 'Are you sure you want to delete this file?' } %>
+    <textarea id="share"><%= ActiveStorage::Blob.service.path_for(@document.doc.key) %></textarea>
+    <button id="click-to-copy">copy to share</button>
   </div>
 <% else %>
   <p class="lead">You are not authorized to access others documents</p>
