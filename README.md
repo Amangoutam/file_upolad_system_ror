@@ -9,7 +9,7 @@ Install rails first, follow the Official ROR documentaion
 ## Cloning the project
 
 ```
-git clone git@github.com:Amangoutam/file_upload_system.git
+git clone git@github.com:Amangoutam/file_upolad_system_ror.git
 ```
 * Run bundle by running this command:
 
